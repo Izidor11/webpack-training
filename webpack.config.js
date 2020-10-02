@@ -29,6 +29,14 @@ module.exports = (env, argv) => {
                             ]
                         }
                     }
+                },
+                {
+                    test: /\.(sa|sc|c)ss$/i,
+                    use:[
+                        'style-loader',
+                        'css-loader',
+                       'sass-loader'
+                    ]
                 }
             ]
         }
