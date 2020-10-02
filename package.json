@@ -1,11 +1,29 @@
 {
-  "name": "webpack",
+  "name": "webpack_test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --mode=development --watch",
+    "build": "webpack --mode=production"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@wordpress/browserslist-config": "^2.7.0",
+    "babel-loader": "^8.1.0",
+    "browserslist": "^4.14.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
 }

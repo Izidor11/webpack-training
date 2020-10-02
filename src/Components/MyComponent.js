@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 class MyComponent extends React.Component {
 	render() {
-		//return <h1>{this.props.title}</h1>
-		return React.createElement('h1', null, `Title: ${this.props.title}`)
+		return(
+		<Fragment>
+		<h1>{this.props.title}</h1>
+		</Fragment>
+		) 
+		//return React.createElement('h1', null, `Title: ${this.props.title}`)
 	}
 }
-
 
 export default MyComponent;
